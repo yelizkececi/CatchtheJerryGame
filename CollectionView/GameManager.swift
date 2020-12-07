@@ -10,7 +10,7 @@ import UIKit
 class GameManager {
     private let characterIcon: UIImage = UIImage(named: "jerry")!
     var images: [ImageItem] = []
-    var counter = 5
+    var counter = 20
     var score = 0
     private var selectedPosition: Int?
     
@@ -19,7 +19,7 @@ class GameManager {
     }
     
     func initializeGame() {
-        for _ in 0...9 {
+        for _ in 0...8 {
             images.append(ImageItem(image: characterIcon, isHidden: true))
         }
         

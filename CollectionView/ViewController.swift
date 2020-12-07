@@ -70,7 +70,6 @@ class ViewController: UIViewController {
         gameManager.initializeGame()
         startGame()
     }
-    
     func startTimer(){
         showTimer = Timer.scheduledTimer(withTimeInterval: 1.7, repeats: true, block: { [self] timers in
             gameManager.showRandomPosition()
